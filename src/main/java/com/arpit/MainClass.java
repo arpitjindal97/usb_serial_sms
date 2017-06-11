@@ -65,7 +65,8 @@ public class MainClass {
                     }
                     portSelection.setVisible(false);
                     startMainGUI();
-                    panel.stop();
+                    if(webcam!=null)
+                        panel.stop();
                     portSelection.dispose();
                 } catch (Exception e) {
                     portSelection.setVisible(true);
